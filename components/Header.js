@@ -10,16 +10,16 @@ import config from "@/config";
 
 const links = [
   {
-    href: "/#pricing",
-    label: "Pricing",
+    href: "/#inicio",
+    label: "Inicio",
   },
   {
-    href: "/#testimonials",
-    label: "Reviews",
+    href: "/packages",
+    label: "Paquetes",
   },
   {
-    href: "/#faq",
-    label: "FAQ",
+    href: "/about",
+    label: "Acerca de",
   },
 ];
 
@@ -55,8 +55,8 @@ const Header = () => {
               className="w-8"
               placeholder="blur"
               priority={true}
-              width={32}
-              height={32}
+              width={52}
+              height={52}
             />
             <span className="font-extrabold text-lg">{config.appName}</span>
           </Link>
