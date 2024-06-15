@@ -7,23 +7,30 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "¿Cómo funciona el sistema de SafeGuardian?",
+    answer: <div className="space-y-2 leading-relaxed">Nuestro sistema utiliza cámaras de seguridad que detectan automáticamente,
+     con inteligencia artificial, caídas, gritos de auxilio, periodos prolongados de inactividad e intrusiones.
+     Las alertas se envían inmediatamente a través de Telegram a cualquier familiar que desee recibirlas.
+    </div>,
   },
   {
-    question: "Can I get a refund?",
-    answer: (
-      <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
-      </p>
-    ),
+    question: "¿Puedo acceder a las cámaras en tiempo real?",
+    answer: <div className="space-y-2 leading-relaxed">Sí, puedes acceder a la transmisión en vivo de las cámaras en
+     cualquier momento a través de nuestra app web (excepto el paquete inicial), para asegurarte del estado de tus seres queridos.
+    </div>,
   },
   {
-    question: "I have another question",
-    answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
-    ),
+    question: "¿Necesito instalar alguna aplicación en especial?",
+    answer: <div className="space-y-2 leading-relaxed">Únicamente necesitas tener instalada la app de Telegram, nuestra aplicación 
+       puede ser accedida desde el navegador sin necesidad de instalación.
+      </div>,
+  },
+  {
+    question: "¿Qué necesito para empezar con SafeGuardian?",
+    answer: <div className="space-y-2 leading-relaxed">Solo necesitas elegir el paquete que mejor se adapte a tus necesidades y
+     realizar el pago en línea, luego acudirá nuestro técnico a tu domicilio para instalar las cámaras y configurar tu sistema
+     de notificaciones. Si lo prefieres, puedes pagar en efectivo al momento de la instalación.
+      </div>,
   },
 ];
 
@@ -94,7 +101,7 @@ const FAQ = () => {
         <div className="flex flex-col text-left basis-1/2">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
-            Frequently Asked Questions
+            Preguntas frecuentes
           </p>
         </div>
 

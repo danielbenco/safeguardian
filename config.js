@@ -24,20 +24,40 @@ const config = {
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Inicial",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Monitoreo en tiempo real y notificaciones (no incluye la aplicación)",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 79,
+        price: 459,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 99,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Monitoreo de 1 cámara",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Notificaciones vía Telegram" },
+          { name: "Soporte técnico" },
+        ],
+      },
+      {
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            : "price_456",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Individual",
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        description: "Monitoreo en tiempo real, notificaciones y aplicación web",
+        // The price you want to display, the one user will be charged on Stripe.
+        price: 599,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        features: [
+          {
+            name: "Monitoreo de 1 cámara",
+          },
+          { name: "Notificaciones vía Telegram" },
+          { name: "Aplicación web" },
+          { name: "Soporte técnico" },
         ],
       },
       {
@@ -47,19 +67,40 @@ const config = {
           process.env.NODE_ENV === "development"
             ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_456",
-        name: "Advanced",
-        description: "You need more power",
-        price: 99,
-        priceAnchor: 149,
+        name: "Medio",
+        description: "Monitoreo en tiempo real, notificaciones y aplicación web",
+        // The price you want to display, the one user will be charged on Stripe.
+        price: 899,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Monitoreo de 2 cámaras",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "Notificaciones vía Telegram" },
+          { name: "Aplicación web" },
+          { name: "Soporte técnico" },
+        ],
+      },
+      {
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            : "price_456",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Completo",
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        description: "Monitoreo en tiempo real, notificaciones y aplicación web",
+        // The price you want to display, the one user will be charged on Stripe.
+        price: 1499,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        features: [
+          {
+            name: "Monitoreo de 4 cámaras",
+          },
+          { name: "Notificaciones vía Telegram" },
+          { name: "Aplicación web" },
+          { name: "Soporte técnico" },
         ],
       },
     ],

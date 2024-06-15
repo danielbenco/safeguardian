@@ -8,6 +8,7 @@ const nextConfig = {
       "images.unsplash.com",
       "logos-world.net",
       "www.fundacionfass.org",
+      "png.pngtree.com",
     ],
   },
 };

@@ -1,10 +1,19 @@
 import React from 'react';
+import Pricing from "@/components/Pricing";
+import { Suspense } from 'react'
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Packages() {
   return (
-    <div>
-      <h1>Paquetes</h1>
-      <p>Descripción de los paquetes.</p>
-    </div>
+    <>
+    <Suspense>
+        <Header />
+    </Suspense>
+    <main>
+        <Pricing />
+    </main>
+    <Footer />
+    </>
   );
 }
