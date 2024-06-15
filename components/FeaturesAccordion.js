@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 
-// The features array is a list of features that will be displayed in the accordion.
+// The features array is a list of tfeatures that will be displayed in the accordion.
 // - title: The title of the feature
 // - description: The description of the feature (when clicked)
 // - type: The type of media (video or image)
@@ -12,9 +12,9 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Emails",
+    title: "Monitoreo completo",
     description:
-      "Send transactional emails, setup your DNS to avoid spam folder (DKIM, DMARC, SPF in subdomain), and listen to webhook to receive & forward emails",
+      "El monitoreo constante del video en tiempo real es posible gracias a nuestra tecnología vanguardista, siendo la Inteligencia Artificial quien detecta inmediatamente caídas, gritos de auxilio, periodos de inactividad prolongados  e intrusiones.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -35,9 +35,9 @@ const features = [
     ),
   },
   {
-    title: "Payments",
+    title: "Notificaciones inmediatas",
     description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "Recibe notificaciones en el instante en caso de la detección de alguna situación de riesgo.",
     type: "image",
     path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     alt: "A computer",
@@ -59,9 +59,9 @@ const features = [
     ),
   },
   {
-    title: "Authentication",
+    title: "Acceso 24/7 a tus cámaras",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+      "Accede a los videos de tus cámaras de seguridad donde quiera que estés y a la hora que desees.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,9 @@ const features = [
     ),
   },
   {
-    title: "Style",
+    title: "Toma decisiones antes que nadie",
     description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
+      "Actúa rápidamente ante una notificación de situación de riesgo con tu adulto mayor, ¡tú decides si envías a la policía, una ambulancia o si te comunicas con un vecino!",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -196,9 +196,9 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          All you need to ship your startup fast
+          La seguridad de tus adultos mayores
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            and get profitable
+            al alcance de tu mano
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
