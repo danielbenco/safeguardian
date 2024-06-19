@@ -1,10 +1,18 @@
-import React from 'react';
+import { Suspense } from 'react'
+import Header from "@/components/Header";
+import FeaturesListicle from "@/components/FeaturesListicle";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (
-    <div>
-      <h1>Acerca de</h1>
-      <p>Información sobre la empresa.</p>
-    </div>
+    <>
+      <Suspense>
+        <Header />
+      </Suspense>
+      <main>
+        <FeaturesListicle />
+      </main>
+      <Footer />
+    </>
   );
 }
