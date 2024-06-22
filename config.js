@@ -21,7 +21,7 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            ? "price_1PUZ9qE5ScakmAL5rUGWZbC5"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Inicial",
@@ -42,7 +42,7 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            ? "price_1PUZCrE5ScakmAL5D72uzKbW"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Individual",
@@ -65,7 +65,7 @@ const config = {
         isFeatured: true,
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
+            ? "price_1PUZEQE5ScakmAL5wMmxAlTx"
             : "price_456",
         name: "Medio",
         description: "Monitoreo en tiempo real, notificaciones y aplicación web",
@@ -85,7 +85,7 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            ? "price_1PUZGPE5ScakmAL56cmfBmDE"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Completo",
@@ -100,7 +100,7 @@ const config = {
           },
           { name: "Notificaciones vía Telegram" },
           { name: "Aplicación web" },
-          { name: "Soporte técnico" },
+          { name: "Soporte técnico prioritario" },
         ],
       },
     ],
@@ -134,7 +134,7 @@ const config = {
     // REQUIRED — the path to log in users. It's use to protect private routes (like /dashboard). It's used in apiClient (/libs/api.js) upon 401 errors from our API
     loginUrl: "/api/auth/signin",
     // REQUIRED — the path you want to redirect users after successfull login (i.e. /dashboard, /private). This is normally a private page for users to manage their accounts. It's used in apiClient (/libs/api.js) upon 401 errors from our API & in ButtonSignin.js
-    callbackUrl: "/dashboard",
+    callbackUrl: "/camaras",
   },
 };
 
