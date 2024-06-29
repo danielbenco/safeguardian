@@ -15,9 +15,9 @@ const features = [
     title: "Monitoreo completo",
     description:
       "El monitoreo constante del video en tiempo real es posible gracias a nuestra tecnología vanguardista, siendo la Inteligencia Artificial quien detecta inmediatamente caídas, gritos de auxilio, periodos de inactividad prolongados  e intrusiones.",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
+    //type: "video",
+    //path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
+    //format: "video/webm",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +38,9 @@ const features = [
     title: "Notificaciones inmediatas",
     description:
       "Recibe notificaciones en el instante en caso de la detección de alguna situación de riesgo.",
-    type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+    //type: "image",
+    //path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    //alt: "A computer",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
-import config from "@/config";
+import { useRouter } from "next/navigation";
 
 const CTA = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/packages");
+  };
+
   return (
     <section className="relative hero overflow-hidden min-h-screen">
       <Image
@@ -20,7 +28,7 @@ const CTA = () => {
             Deja de frustrarte por ¿dónde estarán y con quién? ¿les habrá pasado algo? SafeGuardian se preocupa por ti.
           </p>
 
-          <button className="btn btn-primary btn-wide">
+          <button className="btn btn-primary btn-wide" onClick={handleClick}>
             Conoce nuestros paquetes
           </button>
         </div>

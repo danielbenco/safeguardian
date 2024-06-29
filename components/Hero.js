@@ -1,8 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
-import config from "@/config";
+import { useRouter } from "next/navigation";
+
 
 const Hero = () => {
+  const router = useRouter();
+  
+  const handleClick = () => {
+    router.push("/packages");
+  };
+
   return (
     <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
@@ -13,7 +22,7 @@ const Hero = () => {
           Ofrecemos un sistema de vigilancia inteligente para adultos mayores que pasan tiempo solos en casa, 
           el cual te envía notificaciones inmediatas en caso de alguna situación de riesgo.
         </p>
-        <button className="btn btn-primary btn-wide">
+        <button className="btn btn-primary btn-wide" onClick={handleClick}>
           Conoce nuestros paquetes
         </button>
 
