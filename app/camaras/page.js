@@ -6,8 +6,8 @@ export const dynamic = "force-dynamic";
 
 // Simulación de señal de cámaras con una cámara real (MJPEG)
 const cameraFeeds = [
-  { id: 1, src: "https://benky.ddns.net:9999/video" }, // URL MJPEG de tu cámara
-  { id: 2, src: "https://via.placeholder.com/300?text=Cam+4" },
+  { id: 1, src: "http://benky.ddns.net:9999/video" }, // URL MJPEG de tu cámara
+  { id: 2, src: "https://via.placeholder.com/300?text=Cam+2" },
   { id: 3, src: "https://via.placeholder.com/300?text=Cam+3" },
   { id: 4, src: "https://via.placeholder.com/300?text=Cam+4" },
 ];
