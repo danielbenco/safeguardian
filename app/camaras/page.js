@@ -1,20 +1,17 @@
-import { Suspense } from 'react'
+import { Suspense } from 'react';
 import ButtonAccount from "@/components/ButtonAccount";
 import CamerasHeader from "@/components/CamerasHeader";
 
 export const dynamic = "force-dynamic";
 
-// Simulación de señal de cámaras
+// Simulación de señal de cámaras con una cámara real (MJPEG)
 const cameraFeeds = [
-  { id: 1, src: "https://via.placeholder.com/300?text=Cam+1" },
-  { id: 2, src: "https://via.placeholder.com/300?text=Cam+2" },
-  { id: 3, src: "https://via.placeholder.com/300?text=Cam+3" },
+  { id: 1, src: "http://benky.ddns.net:9999/video" }, // URL MJPEG de tu cámara
+  { id: 2, src: "http://benky.ddns.net:9999/video" },
+  { id: 3, src: "http://benky.ddns.net:9999/video" },
   { id: 4, src: "https://via.placeholder.com/300?text=Cam+4" },
 ];
 
-// This is a private page: It's protected by the layout.js component which ensures the user is authenticated.
-// It's a server component which means you can fetch data (like the user profile) before the page is rendered.
-// See https://shipfa.st/docs/tutorials/private-page
 export default async function Camaras() {
   return (
     <main className="min-h-screen pb-24">
@@ -31,7 +28,7 @@ export default async function Camaras() {
         <section className="grid grid-cols-2 gap-2 p-4">
           {cameraFeeds.map(feed => (
             <div key={feed.id} className="border border-gray-300">
-              <img src={feed.src} alt={`Cam ${feed.id}`} className="w-full h-full object-cover"/>
+              <img src={feed.src} alt={`Cam ${feed.id}`} className="w-full h-full object-cover" />
             </div>
           ))}
         </section>
